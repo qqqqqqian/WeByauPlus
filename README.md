@@ -34,6 +34,6 @@
 - [ ] 二手交易(农大自己的交易平台)
 
 ## 预览
-> 部分页面，截止于1.0.0
+> 部分页面，截止于1.0.5
 
 ![未标题-1](https://raw.githubusercontent.com/qqqqqqian/WeByauPlus/master/example/%E9%83%A8%E5%88%86%E6%88%AA%E5%9B%BE.jpg)
