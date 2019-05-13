@@ -1,0 +1,6 @@
+<!--components/todaySchedule/index.wxml-->
+<view class='oneList border-bottom'>
+  <view class='courseName'>{{courseName}}</view>
+  <view class='part'>{{section}}</view>
+  <view class='classroom'>{{classroom}}</view>
+</view>

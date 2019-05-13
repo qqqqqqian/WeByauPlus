@@ -1,0 +1,17 @@
+.box-shadow{
+  box-shadow: 0 1px 3px rgba(26,26,26,.1);
+}
+.box-border-header{
+  border-radius: 10rpx 10rpx 0 0;
+
+}
+.box-border-body{
+  border-radius: 0 0 10rpx 10rpx;
+}
+.box-margin{
+  margin-top: 7rpx
+}
+page{
+  color:#393E46 ;
+  background-color: #f6f6f6;
+}

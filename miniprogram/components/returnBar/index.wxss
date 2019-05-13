@@ -1,0 +1,15 @@
+/* components/returnBar/index.wxss */
+@import "/icon/icon.wxss";
+.navigationBar{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.return{
+  font-size: 30rpx;
+  width: 100rpx;
+  padding-left: 10rpx;
+ 
+}

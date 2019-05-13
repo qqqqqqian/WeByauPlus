@@ -1,0 +1,18 @@
+/* miniprogram/pages/edubind/index.wxss */
+
+.container{
+  display: flex;
+  width: 100%;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+.container .logo{
+  width:500rpx;
+  margin-top: 150rpx;
+  margin-bottom: 100rpx;
+}
+.container .tips{
+  width:500rpx;
+  font-size: 30rpx;
+}

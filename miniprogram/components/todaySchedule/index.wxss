@@ -1,0 +1,28 @@
+/* components/todaySchedule/index.wxss */
+.oneList{
+  width: 680rpx;
+  height:100rpx;
+  position: relative;
+}
+.courseName{
+  padding-left: 10rpx;
+}
+.part{
+  font-size: 25rpx;
+  padding-left: 10rpx;
+  color: rgb(192, 192, 192);
+}
+.classroom{
+position: absolute;
+left: 430rpx;
+bottom: 0;
+width: 250rpx;
+height: 100rpx;
+line-height: 40rpx;
+font-size: 30rpx;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}

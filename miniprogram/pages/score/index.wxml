@@ -1,0 +1,5 @@
+<!--miniprogram/pages/score/index.wxml-->
+<c-returnBar name="成绩"/>
+<view class='container'>
+  <c-score-card class='card' terms="{{terms}}"></c-score-card>
+</view>

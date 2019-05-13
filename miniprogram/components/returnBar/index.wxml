@@ -1,0 +1,11 @@
+<!--components/returnBar/index.wxml-->
+<view class='navigationBar' style='margin-top:{{statusbar}};line-height:{{capsule}}'>
+  <view bindtap="onreturn" class='return'>
+  <view wx:if="{{returnSwitch}}">
+  <icon class='iconfont icon-arrow-left' style='font-size: 40rpx;'></icon>
+  <text>返回</text>
+  </view>
+  </view>
+  <text>{{name}}</text>
+  <text style='width:104rpx;'></text>
+</view>

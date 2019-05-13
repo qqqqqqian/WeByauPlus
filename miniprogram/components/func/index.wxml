@@ -1,0 +1,5 @@
+<!--components/func/index.wxml-->
+<view class='item'>
+<icon class='iconfont {{iconfont}}'></icon>
+<view style='text-align:center'>{{text}}</view>
+</view>

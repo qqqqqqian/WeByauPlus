@@ -1,0 +1,40 @@
+<!--components/timeTable/index.wxml-->
+<view class='container'>
+  <view bind:tap='onweekTap' class='header'>第{{week}}周
+    <icon class='iconfont icon-arrow-up {{ flag ? "arror-down" : "" }}'></icon>
+  </view>
+  <view class='head kind-list__item-bd {{ flag ? "kind-list__item-bd_show head_show" : "" }}'>
+    <view class='changeWeek'>
+      <icon class='iconfont icon-xiugai' style='font-size:35rpx;display:block;'></icon>
+      <picker bindchange="bindPickerChange" value="{{week-1}}" range="{{pickerWeeks}}">
+          <text>修改\n当前周</text>
+      </picker>
+
+    </view>
+    <scroll-view class='scroll-view_week' scroll-x scroll-into-view="{{toView}}">
+      <view class='scroll-week' data-index= "{{index}}" id="week{{index+1}}" bindtap="weekChange"style='{{week===index+1?"background-color:lightseagreen;":""}}' wx:for="{{dataWeeks}}">
+        第{{item.week}}周
+      </view>
+    </scroll-view>
+  </view>
+  <view class='table'>
+    <view class='tableHead'>
+      <view class='month'>
+        <view>{{month}}</view>
+        <view>月</view>
+      </view>
+      <view class='dayOfWeek {{date===item.date?"grey":""}}' wx:for='{{formatWeeks}}'>
+        <view class='day'>{{item.day}}</view>
+        <view class='date'>{{item.date}}</view>
+      </view>
+    </view>
+    <scroll-view class='scrollTable' scroll-y>
+      <view class='table-left' wx:for='{{section}}'>
+        <view class='number'>{{item}}</view>
+      </view>
+      <view class = 'card' wx:for ='{{shedule}}' style='position:absolute;left:{{66+(item.zj-1)*96}}rpx;top:{{(item.jc-1)*112}}rpx;background-color:{{item.bgColor}}'>
+        <text>{{item.kcmc}}\n{{item.jsdd}}</text>
+      </view>
+    </scroll-view>
+  </view>
+</view>

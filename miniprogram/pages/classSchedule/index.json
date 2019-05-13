@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "c-timeTable":"/components/timeTable/index",
+      "c-returnBar": "/components/returnBar/index"
+  }
+}

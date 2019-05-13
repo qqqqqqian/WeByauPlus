@@ -1,0 +1,12 @@
+<!--components/user-bind/index.wxml-->
+<form bindsubmit="formSubmit" class='container'>
+  <view class='username'>
+    <label>学号</label>
+    <input type='number' name='username' value='{{username}}'></input>
+  </view>
+  <view class='password'>
+    <label>密码</label>
+    <input password='true' name='password' value='{{password}}'></input>
+  </view>
+  <button form-type="submit">绑定</button>
+</form>

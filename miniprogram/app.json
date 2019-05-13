@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "components/banner/index",
+    "components/daily-sentence/index",
+    "pages/center/index",
+    "pages/edubind/index",
+    "pages/classSchedule/index",
+    "pages/score/index",
+    "pages/feedback/index",
+    "pages/calendar/index",
+    "pages/about/index"
+  ],
+  "window": {
+    "backgroundColor": "#ffa69e",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2188f0",
+    "navigationBarTitleText": "农大小精灵",
+    "navigationBarTextStyle": "black",
+    "navigationStyle":"custom"
+  },
+  "tabBar": {
+    "position": "bottom",
+    "selectedColor": "#2c2c2c",
+    "backgroundColor":"#f6f6f6",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/tabbar/index.png",
+        "selectedIconPath": "image/tabbar/index@selected.png"
+      },
+      {
+        "pagePath": "pages/center/index",
+        "text": "我的",
+        "iconPath": "image/tabbar/my.png",
+        "selectedIconPath": "image/tabbar/my@selected.png"
+      }
+    ]
+  }
+}

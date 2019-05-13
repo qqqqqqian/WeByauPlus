@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+      "c-user-bind": "/components/user-bind/index",
+      "c-returnBar": "/components/returnBar/index"
+    }
+}

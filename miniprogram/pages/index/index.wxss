@@ -1,0 +1,75 @@
+@import "../../icon/icon.wxss";
+/* miniprogram/pages/index/index.wxss */
+.container{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+ 
+}
+.container .background-color{
+  height: 500rpx;
+  width: 100%;
+}
+.container .daily-sentence{
+    margin-top: 30rpx;
+  width: 680rpx;
+  font-size: 30rpx;
+  line-height: 50rpx;
+}
+.container .daily-sentence .daily-sentence-header{
+  height: 50rpx;
+
+  background-color: #FFFFFF;
+}
+.container .daily-sentence .daily-sentence-body{
+
+  text-align: center;
+  background-color: #FFFFFF;
+
+}
+
+.container .main-func{
+  height: 400rpx;
+  width: 680rpx;
+  font-size: 30rpx;
+  line-height: 50rpx;
+}
+
+.container .main-func .main-func-header{
+  height: 50rpx;
+  background-color: #FFFFFF;
+  margin-top: 30rpx;
+}
+.container .main-func .main-func-body{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  background-color: #FFFFFF;
+  flex-wrap: wrap;
+}
+.container .main-func .main-func-body c-func{
+  padding: 20rpx 0;
+  flex: 0 0 33%;
+}
+
+.today-shedule-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   background-color: #FFFFFF;
+}
+
+.content{
+  display: block;
+  line-height: 35rpx;
+  text-align: left;
+  font-size:25rpx;
+  color:#666;
+  padding: 0 50rpx;
+}
+
+.border-bottom:not(:last-of-type){
+   border-bottom: 1px solid rgb(192, 192, 192);
+}

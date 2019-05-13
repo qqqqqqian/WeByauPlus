@@ -1,0 +1,152 @@
+/* components/timeTable/index.wxss */
+@import '/icon/icon.wxss';
+.container{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 35rpx;
+}
+.header{
+  width: 100%;
+  line-height: 70rpx;
+  text-align: center;
+  background-color: lightblue;
+  z-index: 1;
+}
+.arror-down{
+  transform: rotate(180deg);
+}
+
+.head{
+  width: 750rpx;
+  height: 140rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  opacity: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.changeWeek{
+  font-size: 25rpx;
+  width: 20%;
+  height: 140rpx;
+  text-align: center;
+  background-color: rgb(227, 253, 255);
+
+}
+.scroll-view_week{
+  width: 80%;
+  line-height: 140rpx;
+  background-color: rgb(205, 252, 255);
+  text-align: center;
+  font-size: 30rpx;
+  float: left;
+  white-space: nowrap;
+
+}
+.scroll-week{
+  width: 25%;
+  line-height: 140rpx;
+  background-color: rgb(205, 252, 255);
+  text-align: center;
+  font-size: 30rpx;
+  display:inline-block;
+}
+
+.kind-list__item-bd {
+  height:0;
+  overflow:hidden;
+}
+.kind-list__item-bd_show {
+  height: auto;
+}
+.head_show{
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.table{
+  width: 100%;
+}
+.tableHead{
+  height: 80rpx;
+  width: 100%;
+  background-color: rgb(235, 254, 255);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.month{
+  width: 67.5rpx;
+  height: 100%;
+  background-color: rgb(235, 254, 255);
+  font-size:30rpx;
+  line-height: 30rpx;
+}
+.month view{
+  text-align: center;
+  position: relative;
+  top: 8rpx;
+}
+.dayOfWeek{
+  width: 97.5rpx;
+  height: 100%;
+  background-color: rgb(235, 254, 255);
+}
+.day{
+  text-align: center;
+  line-height: 50rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.date{
+  text-align: center;
+  line-height: 30rpx;
+  font-size: 20rpx;
+  position: relative;
+  bottom: 6rpx;
+}
+scroll-view::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.scrollTable{
+  height: 1054rpx;
+  position: relative;
+}
+.table-left{
+  height: 110rpx;
+  width: 100%;
+  border-bottom: 1px solid rgb(235, 254, 255);
+}
+.number{
+  line-height: 110rpx;
+  width: 50rpx;
+  text-align: center;
+  background-color: rgb(235, 254, 255);
+  font-size: 30rpx;
+}
+.card{
+  width: 97.5rpx;
+  height: 220rpx;
+  background-color: red;
+  font-size: 25rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  overflow: hidden;
+  line-height: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grey{
+  background-color: lightskyblue;
+}

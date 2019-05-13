@@ -1,0 +1,3 @@
+<!--miniprogram/pages/classSchedule/index.wxml-->
+<c-returnBar name="课表"/>
+<c-timeTable weeks='{{weeks}}'></c-timeTable>

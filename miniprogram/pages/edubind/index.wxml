@@ -1,0 +1,7 @@
+<!--miniprogram/pages/edubind/index.wxml-->
+<c-returnBar name="绑定"/>
+<view class='container'>
+  <image class="logo" src="/image/logo.png" mode="widthFix" lazy-load="true"></image>
+  <c-user-bind bindsubmit="onsubmit" />
+  <view class='tips'><text>提示：\n1.如果绑定失败请多试几次，多点几次绑定哦~\n<text style='color:red'>2.密码与登录apps.byau.edu.cn的密码相同。使用新版教务系统的密码才可以登录哦~</text>\n3.学号密码一经绑定就自动保存了哦~如果绑定失效请取消绑定后重新绑定即可~\n4.农大小精灵交流群：976391928。如果遇到问题欢迎加群咨询哦~</text></view>
+</view>

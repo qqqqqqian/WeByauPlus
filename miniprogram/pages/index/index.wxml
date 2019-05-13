@@ -1,0 +1,37 @@
+<view class='container'>
+  <image src="{{daily.imgurl}}" class='background-color'></image>
+  <view class='main-func'>
+    <view class='main-func-header box-border-header box-shadow'>
+      <icon class='iconfont icon-gongneng' style='font-size:50rpx;padding-bottom:7rpx'></icon>
+      功能
+    </view>
+    <view class='main-func-body box-border-body box-shadow box-margin'>
+      <c-func text="课表" iconfont="icon-chengji" bind:tap="onclassScheduleTap"></c-func>
+      <c-func text="成绩" iconfont="icon-kechengbiao" bind:tap="onscoreTap"></c-func>
+      <c-func text="校历" iconfont="icon-riliriqi" bind:tap="oncalendarTap"></c-func>
+    </view>
+    <view class='main-func-header box-border-header box-shadow'>
+      <icon class='iconfont icon-jintian' style='font-size:50rpx;padding-bottom:7rpx'></icon>
+      今日课表
+    </view>
+    <view class='today-shedule-body box-border-body box-shadow box-margin'>
+      <view bindtap='onnavagationtoBind' wx:if="{{!isBind}}">请先绑定学号~</view>
+      <view wx:if="{{!isClass}}">主人，今天没课呦~</view>
+      <view bindtap='onnavagationtoBind' wx:if="{{!isValid}}">身份过期，请重新登录</view>
+
+      <c-todayShedule courseName="{{item.courseName}}" section="{{item.section}}" classroom="{{item.classroom}}" wx:for="{{todaySchdule}}" class="border-bottom"></c-todayShedule>
+
+    </view>
+          <view class='daily-sentence'>
+        <view class='daily-sentence-header box-border-header box-shadow'>
+          <icon class='iconfont icon-shu'></icon>
+          ONE · 一句话
+        </view>
+        <view class='daily-sentence-body box-border-body box-shadow box-margin'>
+          <view style='padding:20rpx 0;color:#666'>{{daily.year}} / {{daily.month}} / {{daily.dayofmonth}} </view>
+          <c-daily-sentence content="{{daily.content}}" class="content"></c-daily-sentence>
+          <view style='padding: 10rpx 50rpx;text-align:right;font-size:25rpx;color:#666'>-{{daily.author}}</view>
+        </view>
+      </view>
+  </view>
+</view>

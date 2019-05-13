@@ -1,0 +1,35 @@
+<!--miniprogram/pages/feedback/index.wxml-->
+<c-returnBar name="反馈"/>
+<form bindsubmit='bindformsubmit'>
+        <view class="weui-cells__title">反馈标题</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入标题" name="title"/>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-cells__title">反馈内容</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" placeholder="请输入问题的详细描述" style="height: 3.3em" name="description"/>
+                </view>
+            </view>
+        </view>
+                <view class="weui-cells__title">联系方式</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入QQ" name="contact"/>
+                </view>
+            </view>
+        </view>
+        <view class="weui-btn-area">
+            <button class="weui-btn" type="primary" form-type='submit'>提交</button>
+        </view>
+        </form>
+ <view class="weui-article__h3" style='margin-top:30rpx;'>您希望我们添加什么功能，或者有什么BUG都可以提交哦~~~~农大小精灵交流群：976391928</view>
+
+           

@@ -1,0 +1,26 @@
+<!--miniprogram/pages/center/index.wxml-->
+<c-returnBar returnSwitch="{{false}}" name="个人中心"/>
+<view class='container'>
+  <view class='header'>
+    <open-data type="userAvatarUrl" class="avatar" mode="cover"></open-data>
+    <view class='name'>
+      <text>你好!</text>
+      <open-data type="userNickName"></open-data>
+    </view>
+    <view class='bindedu' bindtap="{{isBind ? 'onCanceTap' : 'oneduTap'}}">{{isBind ? '已绑定,点击取消绑定':'点击绑定学号'}}</view>
+  </view>
+  <view class='list'>
+        <view class="weui-cells weui-cells_after-title">
+            <navigator url="../feedback/index" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">我要反馈</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+            <navigator url="../about/index" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">关于</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+        </view>
+  </view>
+</view>
+
+

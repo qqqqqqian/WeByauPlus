@@ -1,0 +1,31 @@
+<!--components/scoreCard/index.wxml-->
+<view class='container'>
+  <view class='header'>
+    <picker bindchange='onbindchange' value='{{pickerIndex}}' range='{{pickerArray}}'>
+      <view class='term' >
+        当前学期：{{pickerArray[pickerIndex]}}
+      </view>
+    </picker>
+    <icon class='iconfont icon-shuaxin refresh {{isFresh? "rotate":""}}' bindtap='onrefresh' ></icon>
+    <view class='count'>
+      <view class='totalCredit'>总学分：{{totalCredit}}</view>
+      <view class='averageScore'>平均成绩：{{averageScore}}</view>
+    </view>
+  </view>
+  <view class='card'>
+    <view class='list'>
+      <text>课程名</text>
+      <text>平时</text>
+      <text>考试</text>
+      <text>学分</text>
+      <text>综合</text>
+    </view>
+    <view class='list' wx:for="{{score}}">
+      <text>{{item.kcmc}}</text>
+      <text>{{item.kscj?item.kscj:'0'}}</text>
+      <text>{{item.pscj?item.pscj:'0'}}</text>
+      <text>{{item.xf}}</text>
+      <text>{{item.cj}}</text>
+    </view>
+  </view>
+</view>

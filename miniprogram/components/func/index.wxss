@@ -1,0 +1,9 @@
+/* components/func/index.wxss */
+@import "../../icon/icon.wxss";
+
+.item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

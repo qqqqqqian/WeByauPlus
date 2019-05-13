@@ -1,0 +1,6 @@
+<!--miniprogram/pages/calendar/index.wxml-->
+<c-returnBar name="校历"/>
+<view class='calendar'>
+  <image src='{{imgArray[index].imgsrc}}' mode='widthFix' style='width:100%' bindtap='onpreviewBigImage'></image>
+  <picker range='{{imgArray}}' range-key='name' bindchange='onpickerChange'><view>当前选择：{{imgArray[index].name}}</view></picker>
+</view>

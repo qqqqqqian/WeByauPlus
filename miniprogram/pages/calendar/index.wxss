@@ -1,0 +1,6 @@
+/* miniprogram/pages/calendar/index.wxss */
+.calendar{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}

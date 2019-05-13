@@ -1,0 +1,8 @@
+<!--components/banner/index.wxml-->
+<swiper indicator-dots='true'>
+ <block wx:for="{{datatext}}" wx:for-item="banner" wx:key="id">
+  <swiper-item>
+    <view class='view'>{{banner.id}}{{banner.content}}</view>
+  </swiper-item>
+  </block>
+</swiper>

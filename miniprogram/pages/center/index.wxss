@@ -1,0 +1,48 @@
+/* miniprogram/pages/center/index.wxss */
+@import "../../icon/icon.wxss";
+@import "/UI/WeUI/weui.wxss";
+.container{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .header{
+  font-size: 30rpx;
+  width: 90%;
+  height: 250rpx;
+  background: #00ADB5;
+  margin-top: 30rpx;
+  position: relative;
+  border-radius: 10rpx;
+}
+
+.container .header .avatar{
+  display: inline-block;
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 30rpx;
+}
+.container .header .name{
+ display: inline-block;
+ position: absolute;
+ top:35rpx;
+
+}
+
+.container .header .bindedu{
+ display: inline-block;
+ position: absolute;
+  width: 280rpx;
+ bottom: 100rpx;
+ text-align: left;
+
+
+}
+.list{
+  margin-top: 35rpx;
+  width: 100%;
+}

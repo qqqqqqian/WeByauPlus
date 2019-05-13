@@ -1,0 +1,25 @@
+<!--miniprogram/pages/about/index.wxml-->
+<c-returnBar name="关于"/>
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-article">
+            <view class="weui-article__h1">关于农大小精灵</view>
+            <view class="weui-article__section">
+                <view class="weui-article__section">
+                    <view class="weui-article__h3">关于开发者</view>
+                    <view class="weui-article__p">
+                      开发者是一名大三的理学院的学生，热爱技术，出于练手的目的制作了这个小程序~欢迎加群讨论,农大小精灵交流群：976391928
+                    </view>
+
+                </view>
+                <view class="weui-article__section">
+                    <view class="weui-article__h3">关于该小程序</view>
+                    <view class="weui-article__p">
+                      <text>前端采用原生js开发，部分样式采用WeUI样式库，大部分页面代码都已组件化，后端使用了小程序提供的云开发能力，逻辑代码很糙，没有进行模块化，后续有时间的话会进行修改优化。\n未来可能会添加的功能：四六级成绩查询、空教室查询、图书馆书籍查询、学分统计、校园资讯、失物招领。 
+                      \n未来版本完善后会进行开源~</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

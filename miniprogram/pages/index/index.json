@@ -1,0 +1,8 @@
+{
+  "usingComponents":{
+    "c-daily-sentence": "/components/daily-sentence/index",
+    "c-func": "/components/func/index",
+    "c-todayShedule": "/components/todaySchedule/index"
+  }
+}
+
