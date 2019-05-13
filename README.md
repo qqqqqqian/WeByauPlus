@@ -36,4 +36,4 @@
 ## 预览
 > 部分页面，截止于1.0.0
 
-![未标题-1](C:\Users\QianFeiLong\Desktop\农大小精灵宣传材料\未标题-1.jpg)
+![未标题-1](https://raw.githubusercontent.com/qqqqqqian/WeByauPlus/master/example/%E9%83%A8%E5%88%86%E6%88%AA%E5%9B%BE.jpg)
